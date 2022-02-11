@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel = "icon" type = "image/png" href = "./icon.png">
+    <title>Sachin's Studio</title>
+    <style>
+       body{
+           padding:0;
+           margin:0;
+           overflow-x: hidden;
+           font-family: Helvetica;
+       }
+       nav{
+        position: fixed;
+    width: 100%;
+       }
+        .navigation{
+           
+             position: fixed;;
+            top:0px;
+
+        }
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+justify-content: center;
+}
+
+li {
+  display: inline-block;
+  max-width: 120px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(255, 255, 255);
+  color:black
+}
+
+.active {
+  background-color: #fc1763;
+}
+.content{
+    padding:10px 5vw;
+}
+.img_main{
+    
+    /* width:100vw; */
+    height:300px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.titleTxt{
+    text-align: center;
+    font-size: 30px;
+}
+.mainP{
+    text-align: center;
+}
+.pData{
+  text-align: justify;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start; 
+}
+.flex-items{
+    margin: 10px;
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: all 0.2s;
+ 
+}
+.flex-items:hover{
+  transform:scale(1.1,1.1);
+}
+
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <div class="navigaiton">
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#project">My Work</a></li>
+                <li><a href="./contactus.html">Contact us</a></li>
+                <li><a href="./courses.html">Courses</a></li>
+            </ul>
+        </div>
+    </nav>
+    <img src="./bg.jpg" class="img_main" />
+    <div class="content">
+        
+      <img src="icon.png" width="50px"/>
+        <h3 class="titleTxt">
+         
+          Welcome to Sachin's Studio
+        </h3>
+
+        <p class="mainP">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h3>Partners</h3>
+        <p class="pData">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+        <h3>Features</h3>
+        <p class="pData">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+        <h3 id="project">Projects</h3>
+        <!-- photo container using flex -->
+        <div class="flex-container">
+            <div class="flex-items"><img class="projectImg" src="./10jpg.jpg"/></div>
+            <div class="flex-items"><img class="projectImg" src="./9.jpg"/></div>
+            <div class="flex-items"><img  class="projectImg" src="./8.jpg"/></div>
+            <div class="flex-items"><img class="projectImg" src="./7.jpg"/></div>
+            <div class="flex-items"><img class="projectImg" src="./6.jpg"/></div>
+            <div class="flex-items"><img class="projectImg" src="./5.jpg"/></div>
+            <div class="flex-items"><img  class="projectImg" src="./3.jpg"/></div>
+            <div class="flex-items"><img class="projectImg" src="./2.jpg"/></div>
+            <div class="flex-items"><img class="projectImg" src="./1.jpg"/></div>   
+            <div class="flex-items"><img class="projectImg" src="./7.jpg"/></div>
+            <div class="flex-items"><img class="projectImg" src="./6.jpg"/></div>
+            <div class="flex-items"><img class="projectImg" src="./5.jpg"/></div>
+            <div class="flex-items"><img class="projectImg" src="./10jpg.jpg"/></div>
+            <div class="flex-items"><img class="projectImg" src="./9.jpg"/></div>
+            <div class="flex-items"><img  class="projectImg" src="./8.jpg"/></div>
+            <div class="flex-items"><img class="projectImg" src="./7.jpg"/></div>
+            <div class="flex-items"><img class="projectImg" src="./6.jpg"/></div>
+            
+       
+        </div>
+    </div>
+        
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel = "icon" type = "image/png" href = "./icon.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses </title>
+</head>
+<style>
+    body{
+        padding:0;
+        margin:0;
+        overflow-x: hidden;
+        font-family: Helvetica;
+        
+    }
+    nav{
+        position: fixed;
+        width: 100%;
+        top:0px;
+       }
+     .navigation{
+        
+         position: sticky;
+         top:0px;
+
+     }
+     ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: rgb(0, 0, 0);
+display: flex;
+justify-content: center;
+}
+
+li {
+display: inline-block;
+max-width: 120px;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover:not(.active) {
+background-color: rgb(255, 255, 255);
+color:black
+}
+
+.active {
+background-color: #fc1763;
+}
+.content{
+ padding:10px 5vw;
+}
+
+.titleTxt{
+ text-align: center;
+ font-size: 30px;
+ font-family: Helvetica;
+}
+.cards{
+    border: solid;
+    max-width: 200px;
+    border-radius: 5px;
+    margin:10px 20px;
+    padding:10px;    
+}
+.img{
+    width:200px;
+    height:130px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+}
+</style>
+<body>
+    <nav>
+        <div class="navigaiton">
+            <ul>
+                <li><a  href="./index.html">Home</a></li>
+                <li><a href="./index.html#projects">My Work</a></li>
+                <li><a  href="./contactus.html">Contact us</a></li>
+                <li><a class="active" href="./courses.html">Courses</a></li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <h3 class="titleTxt">     
+        Courses
+    </h3>
+
+    <div class="container">
+        <div class="cards">
+            <img class="img" src="./6.jpg"/>
+            <h4 class="cardTitle">Photography</h4>
+            <p class="info">Learn Basic Photography</p>
+        </div>
+
+        <div class="cards">
+            <img class="img"  src="./7.jpg"/>
+            <h4 class="cardTitle">Portrait</h4>
+            <p class="info">Learn Portrait Photography</p>
+        </div>
+
+        <div class="cards">
+            <img class="img" src="./1.jpg" />
+            <h4 class="cardTitle">Advance Photography</h4>
+            <p class="info">Learn Advance Photography</p>
+        </div>
+
+        <div class="cards">
+            <img class="img" src="./10jpg.jpg" />
+            <h4 class="cardTitle">Photo Manupilation</h4>
+            <p class="info">Learn Photo Editing</p>
+        </div>
+    </div>
+</body>
+</html>

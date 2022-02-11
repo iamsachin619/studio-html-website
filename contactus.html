@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel = "icon" type = "image/png" href = "./icon.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+</head>
+
+
+<style>
+       body{
+           padding:0;
+           margin:0;
+           overflow-x: hidden;
+           font-family: Helvetica;
+       }
+       nav{
+        position: fixed;
+        width: 100%;
+        top:0px;
+       }
+        .navigation{
+           
+            position: sticky;
+            top:0px;
+
+        }
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+justify-content: center;
+}
+
+li {
+  display: inline-block;
+  max-width: 120px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(255, 255, 255);
+  color:black
+}
+
+.active {
+  background-color: #fc1763;
+}
+.content{
+    padding:10px 5vw;
+}
+
+.titleTxt{
+    text-align: center;
+    font-size: 30px;
+}
+.textInput{
+    width: -webkit-fill-available;
+    max-width: 300px;
+    height: 30px;
+    padding: 0px 8px;
+    margin: 7px;
+}
+.textArea{
+    max-width: 300px;
+    height: 80px;
+    padding: 0px 8px;
+    margin: 7px;
+    width:300px;
+
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+tr{
+    margin: 10px 10px;
+}
+.btn{
+    text-align:center;
+}
+.titleTd{
+   text-align: left;
+   
+}
+</style>
+<body>
+    <nav>
+        <div class="navigaiton">
+            <ul>
+                <li><a  href="./index.html">Home</a></li>
+                <li><a href="./index.html#projects">My Work</a></li>
+                <li><a class="active" href="./contactus.html">Contact us</a></li>
+                <li><a href="./courses.html">Courses</a></li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <h3 class="titleTxt">
+          Contact Us Form
+    </h3>
+   
+    <div class="container">
+        <form method="GET" action="./thankyou.html">
+        <table width="430px">
+            <tr>
+                <td class="titleTd">Email :</td>
+                <td colspan="2"><input class="textInput" type="email" placeholder="Email"/></td>
+                
+
+            </tr>
+            
+            <tr>
+                <td class="titleTd">Message :</td>
+                <td colspan="2"><textarea class="textArea" placeholder="Message"></textarea></td>
+
+            </tr>
+            <tr>
+                <td colspan="3" class="btn"><button>Send!</button></td>
+            </tr>
+        </table>
+    </form>
+    </div>
+</body>
+</html>
